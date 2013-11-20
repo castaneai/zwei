@@ -9,8 +9,14 @@ li {
 
 body {
     background: #fafafa;
-    overflow: hidden;
     font-family: "Hiragino Maru Gothic Pro";
+    overflow: hidden;
+}
+
+.draggable {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    cursor: default;
 }
 
 .btn {
@@ -26,11 +32,12 @@ body {
     height: 600px;
 }
 
+header,
+.thread-header {
+}
+
 /* ヘッダ */
 header {
-    -webkit-app-region: drag;
-    -webkit-user-select: none;
-
     position: relative;
     text-align: left;
     font-size: small;
@@ -104,15 +111,21 @@ header {
     right: 12px;
 }
 
+.thread-body {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
 .thread-res {
     border-top: 1px solid white;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
 }
 
 .res-number,
 .res-body {
     display: inline-block;
     vertical-align: top;
+    padding: 8px;
 }
 
 .res-number {
@@ -122,11 +135,6 @@ header {
     color: #aaa;
 }
 
-.res-number:hover {
-    color: #fafafa;
-    background: #aaa;
-}
-
 .res-body {
-    width: 330px;
+    width: 280px;
 }
