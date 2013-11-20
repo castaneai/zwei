@@ -3,8 +3,10 @@
 	"main": "index.html",
 
     "window": {
+        "title": "zwei",
         "width": 400,
         "height": 600,
-        "frame": false
+        "frame": false,
+        "resizable": false
     }
 }
