@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: #fafafa;
+    overflow: hidden;
+    font-family: "Hiragino Maru Gothic Pro";
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+}
+
+/* ヘッダ */
+header {
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+
+    position: relative;
+    text-align: left;
+    font-size: small;
+    padding: 4px 12px;
+    background: #333;
+    color: #aaa;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.header-buttons .btn-close {
+    display: inline-block;
+    padding-top: 8px;
+    border: none;
+    background: transparent;
+    color: #aaa;
+    width: 50px;
+}
+
+.header-buttons button:hover {
+    background: #E74C3C;
+    color: #fafafa;
+}
+
+.menu,
+.thread {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 600px;
+}
+
+.menu {
+    display: none;
+    background: #333;
+    color: #fafafa;
+    width: 200px;
+}
+
+.thread {
+    width: 400px;
+}
+
+.thread-header {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    background: #333;
+    color: #fafafa;
+}
+
+.thread-header .thread-title {
+    font-size: 18px;
+}
+
+.thread-header .btn {
+    color: #fafafa;
+    font-size: 18px;
+}
+
+.thread-header .btn-menu {
+    position: absolute;
+    left: 12px;
+}
+
+.thread-header .btn-write {
+    position: absolute;
+    right: 12px;
+}
+
+.thread-res {
+    border-top: 1px solid white;
+    border-bottom: 1px solid #ccc;
+}
+
+.res-number,
+.res-body {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.res-number {
+    text-align: center;
+    width: 70px;
+    font-size: x-large;
+    color: #aaa;
+}
+
+.res-number:hover {
+    color: #fafafa;
+    background: #aaa;
+}
+
+.res-body {
+    width: 330px;
+}
