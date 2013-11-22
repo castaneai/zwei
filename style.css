@@ -70,7 +70,7 @@ header {
 .thread {
     display: inline-block;
     vertical-align: top;
-    min-height: 600px;
+    height: 508px;
 }
 
 .menu {
@@ -112,7 +112,8 @@ header {
 }
 
 .thread-body {
-    max-height: 600px;
+    height: 508px;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 

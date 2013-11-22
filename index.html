@@ -2,6 +2,7 @@
 <html ng-app="">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
         <title>Oasis</title>
         <link rel="stylesheet" href="icons.css"/>
         <link rel="stylesheet" href="style.css">
@@ -31,7 +32,7 @@
                                     <div class="res-date"></div>
                                     <div class="res-id"></div>
                                 </div>
-                                <div class="res-message" ng-bind-html-unsafe="res.message">{{ res.message }}</div>
+                                <div class="res-message" ng-bind-html="res.body"></div>
                             </div>
                         </li>
                     </ul>
@@ -39,6 +40,7 @@
             </div>
         </div>
 
+        <script src="datAnalyzer.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="script.js"></script>
     </body>
