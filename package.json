@@ -1,12 +1,22 @@
 {
-	"name": "nw-demo",
-	"main": "index.html",
+  "name": "zwei",
+  "repository": "https://github.com/castaneai/zwei",
 
-    "window": {
-        "title": "zwei",
-        "width": 400,
-        "height": 600,
-        "frame": false,
-        "resizable": false
-    }
+  "main": "app/index.html",
+  "scripts": {
+    "start": "nw"
+  },
+
+  "dependencies": {
+    "nw": "^0.12.0-alpha2"
+  },
+
+  "window": {
+    "title": "zwei",
+    "width": 400,
+    "height": 600,
+    "frame": false,
+    "toolbar": false,
+    "resizable": false
+  }
 }

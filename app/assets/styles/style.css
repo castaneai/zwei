@@ -9,7 +9,9 @@ li {
 
 body {
     background: #fafafa;
-    font-family: "Hiragino Maru Gothic Pro";
+    font-family: 'Lucida Grande',
+    'Hiragino Maru Gothic Pro', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+    'Segoe UI', 'Meiryo', 'メイリオ', sans-serif;
     overflow: hidden;
 }
 

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Flat-UI-Icons';
-    src: url('fonts/Flat-UI-Icons.eot');
-    src: url('fonts/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'), url('fonts/Flat-UI-Icons.woff') format('woff'), url('fonts/Flat-UI-Icons.ttf') format('truetype');
+    src: url('../fonts/Flat-UI-Icons.eot');
+    src: url('../fonts/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'), url('../fonts/Flat-UI-Icons.woff') format('woff'), url('../fonts/Flat-UI-Icons.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
