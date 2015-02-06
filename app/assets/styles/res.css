@@ -1,0 +1,73 @@
+.menu,
+.thread {
+    display: inline-block;
+    vertical-align: top;
+    height: 508px;
+}
+
+.menu {
+    display: none;
+    background: #333;
+    color: #fafafa;
+    width: 200px;
+}
+
+.thread {
+    width: 400px;
+}
+
+.thread-header {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    background: #333;
+    color: #fafafa;
+}
+
+.thread-header .thread-title {
+    font-size: 18px;
+}
+
+.thread-header .btn {
+    color: #fafafa;
+    font-size: 18px;
+}
+
+.thread-header .btn-menu {
+    position: absolute;
+    left: 12px;
+}
+
+.thread-header .btn-write {
+    position: absolute;
+    right: 12px;
+}
+
+.thread-body {
+    height: 508px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.thread-res {
+    border-top: 1px solid white;
+    border-bottom: 1px solid #ddd;
+}
+
+.res-number,
+.res-body {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+}
+
+.res-number {
+    text-align: center;
+    width: 40px;
+    font-size: x-large;
+    color: #aaa;
+}
+
+.res-body {
+    width: calc(100% - 80px);
+}

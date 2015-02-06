@@ -1,48 +1,29 @@
 <!DOCTYPE html>
-<html ng-app="">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <title>Oasis</title>
-        <link rel="stylesheet" href="assets/styles/icons.css"/>
-        <link rel="stylesheet" href="assets/styles/style.css">
-    </head>
+<html ng-app="zwei">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Zwei</title>
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/icons.css"/>
+    <link rel="stylesheet" href="assets/styles/res.css">
+</head>
 
-    <body ng-controller="MainCtrl">
-        <div class="container">
-            <header class="draggable">
-                <p>2-channel browser window</p>
-                <div class="header-buttons">
-                    <button class="btn btn-close fui-cross" onclick="window.close()"></button>
-                </div>
-            </header>
-            <div class="menu">MENU</div><!--
-            --><div class="thread">
-                <div class="thread-header">
-                    <button class="btn btn-menu fui-list"></button>
-                    <button class="btn btn-write fui-new"></button>
-                    <h2 class="thread-title">スレッドタイトル</h2>
-                </div>
-                <div class="thread-body">
-                    <ul>
-                        <li class="thread-res" ng-repeat="res in resList">
-                            <div class="res-number">{{ $index + 1 }}</div><!--
-                            --><div class="res-body">
-                                <div class="res-info">
-                                    <div class="res-date"></div>
-                                    <div class="res-id"></div>
-                                </div>
-                                <div class="res-message" ng-bind-html="res.body"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<body ng-controller="MainController">
 
-        <script src="assets/scripts/datAnalyzer.js"></script>
-        <script src="assets/scripts/angular.min.js"></script>
-        <script src="assets/scripts/script.js"></script>
-    </body>
+<!-- title bar -->
+<header class="draggable">
+    Zwei Window
+    <button class="btn btn-close fui-cross" onclick="window.close()"></button>
+</header>
+
+<res-view ng-controller="ResViewController"></res-view>
+
+<script src="assets/scripts/angular.min.js"></script>
+<script src="assets/scripts/zwei.js"></script>
+<script src="assets/scripts/services/datLoader.js"></script>
+<script src="assets/scripts/controllers/main.js"></script>
+<script src="assets/scripts/controllers/resView.js"></script>
+</body>
 </html>
 

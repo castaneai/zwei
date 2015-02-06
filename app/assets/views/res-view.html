@@ -1,0 +1,6 @@
+<ul>
+    <li ng-repeat="res in resList">
+        <div class="res-number">{{ $index + 1 }}</div>
+        <div class="res-body" ng-bind-html="res.body | unsafe"></div>
+    </li>
+</ul>

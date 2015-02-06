@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: #fafafa;
+    font-family: 'Lucida Grande',
+    'Hiragino Maru Gothic Pro', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+    'Segoe UI', 'Meiryo', 'メイリオ', sans-serif;
+    overflow: hidden;
+}
+
+.draggable {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.btn {
+    -webkit-app-region: no-drag;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* ヘッダ */
+header {
+    background: #333;
+    color: #aaa;
+    padding: 0.4em;
+}
+
+/* 閉じるボタン */
+.btn-close {
+    position: absolute;
+    padding: 0.8em 0.4em 0.4em 0.4em;
+    right: 0.4em;
+    top: 0;
+    color: #aaa;
+    width: 50px;
+}
+
+.btn-close:hover {
+    background: #E74C3C;
+    color: #fafafa;
+}
